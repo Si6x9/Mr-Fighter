@@ -1,0 +1,34 @@
+*{
+    font-family: cursive;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+#playerfirst, #playersecond{
+    text-transform:uppercase;
+}
+
+.container{
+    display: block;
+}
+#p1{
+    width: 30%;
+    height: 27vh;
+    transform: rotateY(180deg);
+}
+#p2{
+    width: 30%;
+    height: 25.4vh;
+}
+
+.win{
+    font-size: 4rem;
+    text-align: center;
+    color: red;
+    
+    text-transform:uppercase;
+    font-weight: 900;
+    display: none;
+}

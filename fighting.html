@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fighting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2503/2503381.png" type="image/x-icon">
+    <title>Mr Fighter</title>
+</head>
+
+<body>
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img width="59" height="50" class="me-2" viewBox="0 0 118 94"
+                        src="https://cdn-icons-png.flaticon.com/512/2503/2503381.png" alt="">
+                    <span class="fs-4">Mr Fighter</span>
+                </a>
+
+                <!-- <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Features</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
+                    <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
+                </nav> -->
+            </div>
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Fight <img src="https://cdn-icons-png.flaticon.com/512/2736/2736136.png" width="55px" alt="">
+                </h1>
+                <!-- <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with
+                    this Bootstrap example. It’s built with default Bootstrap components and utilities with little
+                    customization.</p> -->
+            </div>
+
+
+            <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+
+                <div class="col">
+
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary"><div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 id="playerfirst" class="my-0 fw-normal">Player 1</h4>
+                        </div>
+                        
+                        <div class="card-body">
+                            <img class="playerimg card-title pricing-card-title" id="p1"
+                                src="https://i.imgur.com/JSQQf8m.gif" />
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><h4>q: Kick</h4></li>
+                                <li><h4>a: Heal</h4></li>
+                            </ul>
+                        </div>
+                        <span class="border-top"></span>
+                        <div class="card-header py-3">
+                            <h1 id="firstscore" class="my-0 fw-600">100</h1>
+                          </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 id="playersecond" class="my-0 fw-normal">Player 2</h4>
+                        </div>
+                        <div class="card-body">
+                            <img class="playerimg card-title pricing-card-title" id="p2" src="https://i.imgur.com/Z0QCi47.gif" />
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><h3>p: Kick</h3></li>
+                                <li><h3>l: Heal</h3></li>
+                            </ul>
+                        </div>
+                        <span class="border-top"></span>
+                        <div class="card-header py-3">
+                            <h1 id="secondscore" class="my-0 fw-600">100</h1>
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-lg-6 mx-auto">
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button id="simulate" type="button" class="btn btn-warning btn-lg px-4 gap-3">Simulate</button>
+                    <button id="reset" type="button" class="btn btn-outline-danger btn-lg px-4">Reset</button>
+                </div>
+            </div>
+            <div id="win" class="win">Win</div>
+        </header>
+    </div>
+    
+    <!-- audios -->
+    <audio id="pAattack" controls style="display: none;"><source src="./sounds/fastpunch.mp3" type="audio/mpeg"></audio>
+    <audio id="pBattack" controls style="display: none;"><source src="./sounds/quickhit.mp3" type="audio/mpeg"></audio>
+    <audio id="pAheal" controls style="display: none;"><source src="./sounds/fastheal.mp3" type="audio/mpeg"></audio>
+    <audio id="pBheal" controls style="display: none;"><source src="./sounds/quickheal.mp3" type="audio/mpeg"></audio>
+
+    <audio id="victory" type="audio/mpeg" src="./sounds/victory.mp3" controls style="display: none;"></audio>
+
+    <!-- javascripts -->
+    <script src="fighting.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+</html>
